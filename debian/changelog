@@ -1,0 +1,70 @@
+dangen (0.5-2) unstable; urgency=low
+
+  * debian/rules: set ./configure options with
+    dpkg-buildflags --export=configure
+  * debian/control: added Build-Depends: dpkg-dev (>= 1.16.1) because
+    this package uses dpkg-buildflags
+
+ -- Oohara Yuuma <oohara@debian.org>  Wed, 08 Feb 2012 21:17:09 +0900
+
+dangen (0.5-1) unstable; urgency=low
+
+  * New upstream release
+  * the new upstream release fixes the following bug:
+    + Add the return value of sdl-config --libs (which usually
+      contains a -l flag) to LIBS, not AM_LDFLAGS.  You can now
+      use the --as-needed option of binutils-gold ld.  (closes: #638743)
+  * debian/source/format: new file, set the source format to 3.0 (quilt)
+  * debian/rules: added build-arch and build-indep targets
+  * debian/control: set Standards-Version: to 3.9.2
+  * debian/control, debian/compat: set debhelper compatibility level to 8
+  * debian/control: added Build-Conflicts: autoconf2.13, automake1.4
+    just in case
+  * debian/control, debian/rules: don't copy config.guess and config.sub
+    from autotools-dev because they are unnecessary
+  * debian/control, debian/rules: use dh-autoreconf to regenerate
+    autoconf/automake files
+  * debian/rules: put CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" after
+    ./configure, not before it
+
+ -- Oohara Yuuma <oohara@debian.org>  Fri, 27 Jan 2012 00:34:51 +0900
+
+dangen (0.4-1) unstable; urgency=low
+
+  * new upstream release
+  * new maintainer (closes: #554249)
+  * debian/compat: set debhelper compatibility level to 7
+  * debian/control: updated the versioned dependency of debhelper
+  * debian/control: removed the versioned dependency on libraries
+    to respect symbols files if available
+  * debian/control: Build-Depends on autotools-dev because the package
+    uses autoconf
+  * debian/control, debian/rules: no longer uses dbs
+  * debian/dangen.docs.in: renamed to debian/dangen/docs because it is
+    no longer auto-generated
+  * debian/control: pass CFLAGS and LDFLAGS to configure script
+  * debian/control: replaced dh_clean -k with dh_prep
+  * debian/patches: removed because it is empty
+  * debian/control: uses Homepage: for the upstream URL
+  * debian/dangen.preinst, debian/dangen.prerm: removed because they
+    does nothing
+  * debian/watch: new file, supports uscan
+  * debian/dangen.menu: set section to Games/Action
+  * debian/control: set Standards-Version: to 3.8.3
+  * debian/control: added ${misc:Depends} to Depends:
+
+ -- Oohara Yuuma <oohara@debian.org>  Fri, 13 Nov 2009 04:50:28 +0900
+
+dangen (0.3-2) unstable; urgency=low
+
+  * debian/copyright: points /usr/share/common-licenses/GPL-2 directly
+    instead of /usr/share/common-licenses/GPL because the upstream says
+    "no other version is allowed"
+
+ -- Oohara Yuuma <oohara@debian.org>  Sat,  8 Oct 2005 16:20:30 +0900
+
+dangen (0.3-1) unstable; urgency=low
+
+  * Initial Release.  (closes: #332278)
+
+ -- Oohara Yuuma <oohara@debian.org>  Thu,  6 Oct 2005 01:31:22 +0900

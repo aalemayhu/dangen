@@ -1,0 +1,2 @@
+?package(dangen): needs="X11" section="Games/Action" \
+  title="Dangen" command="/usr/games/dangen"
