@@ -5,6 +5,7 @@ dangen (0.5-3) UNRELEASED; urgency=medium
     - debian/upstream: Add upstream public key.
   * Fix lintian ancient-standards-version tag.
     - Bump Standards-Version from 3.9.2 to 3.9.5.
+  * New maintainer, thanks Oohara for your work!(Closes: #738876)
 
  -- Alexander Alemayhu <alexander@bitraf.no>  Mon, 04 Aug 2014 22:57:28 +0200
 
