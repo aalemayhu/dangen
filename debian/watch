@@ -1,4 +1,4 @@
 version=3
 
-http://www.interq.or.jp/libra/oohara/dangen/dangen-(.+)\.tar\.gz
+opts=pgpsigurlmangle=s/$/.asc/ http://www.interq.or.jp/libra/oohara/dangen/dangen-(.+)\.tar\.gz
 

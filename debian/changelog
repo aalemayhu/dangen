@@ -1,3 +1,11 @@
+dangen (0.5-3) UNRELEASED; urgency=medium
+
+  * Fix lintian debian-watch-may-check-gpg-signature tag.
+    - debian/watch: Use asc file.
+    - debian/upstream: Add upstream public key.
+
+ -- Alexander Alemayhu <alexander@bitraf.no>  Mon, 04 Aug 2014 22:57:28 +0200
+
 dangen (0.5-2) unstable; urgency=low
 
   * debian/rules: set ./configure options with
