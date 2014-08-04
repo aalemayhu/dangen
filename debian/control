@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Oohara Yuuma <oohara@debian.org>
 Build-Depends: debhelper (>= 8), libsdl1.2-dev, libsdl-image1.2-dev, dh-autoreconf, dpkg-dev (>= 1.16.1)
 Build-Conflicts: autoconf2.13, automake1.4
-Standards-Version: 3.9.2
+Standards-Version: 3.9.5
 Homepage: http://www.interq.or.jp/libra/oohara/dangen/index.html
 
 Package: dangen
