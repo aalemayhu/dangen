@@ -1,6 +1,5 @@
 #!/usr/bin/make -f
 
-# Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
 export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
@@ -17,10 +16,6 @@ configure: configure-stamp
 configure-stamp:
 	dh_testdir
 	[ ! -e config.cache ] || rm config.cache
-# Once dh_autoreconf is called, dh_autoreconf_clean must be called
-# before dh_autoreconf is called again, or information saved in
-# debian/autoreconf.before will be lost.  Since dh_autoreconf_clean
-# can be called more than once without a problem, call it here.
 	dh_autoreconf_clean
 	dh_autoreconf
 	./configure $(shell dpkg-buildflags --export=configure) \
@@ -54,9 +49,10 @@ install: build
 	dh_prep
 	dh_installdirs
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/dangen/
+	cp $(CURDIR)/debian/dangen.xpm $(CURDIR)/debian/dangen/usr/share/pixmaps/dangen.xpm
+	cp $(CURDIR)/debian/dangen.desktop $(CURDIR)/debian/dangen/usr/share/applications/dangen.desktop
 
 binary-indep: build install
-# We have nothing to do.
 
 binary-arch: build install
 	dh_testdir

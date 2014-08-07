@@ -1,2 +1,10 @@
-?package(dangen): needs="X11" section="Games/Action" \
-  title="Dangen" command="/usr/games/dangen"
+?package(dangen): needs="X11" \
+  section="Games/Action" \
+  title="dangen"\
+  longtitle="dangen --- shoot 'em up game where accurate shooting matters" \
+  description="dangen is a shoot 'em up game that attach importance to accuracy \
+  of shooting.  With the combination of the cursor key and the shot button, you \
+  can shoot at your side or even at your back.  Get the bonus point by hitting \
+  the enemy without a miss.  You can choose stages of different difficulty." \
+  icon="/usr/share/pixmaps/dangen.xpm" \
+  command="/usr/games/dangen"

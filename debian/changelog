@@ -5,6 +5,14 @@ dangen (0.5-3) UNRELEASED; urgency=medium
     - debian/upstream: Add upstream public key.
   * Fix lintian ancient-standards-version tag.
     - Bump Standards-Version from 3.9.2 to 3.9.5.
+  * Provide desktop file and icon.(Closes: #737856)
+    - Added debian/dangen.desktop
+    - Added debian/dangen.dirs
+    - Modified debian/dangen.menu to include icon and description.
+    - Added debian/dangen.xpm
+    - Modified debian/rules:
+      Removed some comments and made sure dangen.{desktop, menu} are copied.
+
   * New maintainer, thanks Oohara for your work!(Closes: #738876)
 
  -- Alexander Alemayhu <alexander@bitraf.no>  Mon, 04 Aug 2014 22:57:28 +0200
