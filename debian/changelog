@@ -12,7 +12,10 @@ dangen (0.5-3) UNRELEASED; urgency=medium
     - Added debian/dangen.xpm
     - Modified debian/rules:
       Removed some comments and made sure dangen.{desktop, menu} are copied.
-
+  * Fix lintian extra-license-file tag.
+    - debian/dangen.docs: remove extra license line.
+    - fix-extra-license-file.patch added to remove all license files from
+      EXTRA_DIST.
   * New maintainer, thanks Oohara for your work!(Closes: #738876)
 
  -- Alexander Alemayhu <alexander@bitraf.no>  Mon, 04 Aug 2014 22:57:28 +0200

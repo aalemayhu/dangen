@@ -1,0 +1,16 @@
+Description: Remove license files from EXTRA_DIST.
+
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -62,10 +62,7 @@ dangen_LDADD =  libtenm/libtenm.a \
+ 
+ man_MANS = dangen.6
+ 
+-EXTRA_DIST = Artistic-2 \
+-  GPL-2 \
+-  LICENSE \
+-  README-ja-utf8 \
++EXTRA_DIST = README-ja-utf8 \
+   README-ja-sjis \
+   dangen.6
+ 
