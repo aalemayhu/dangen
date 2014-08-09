@@ -1,4 +1,4 @@
-dangen (0.5-3) UNRELEASED; urgency=medium
+dangen (0.5-3) unstable; urgency=medium
 
   * Fix lintian debian-watch-may-check-gpg-signature tag.
     - debian/watch: Use asc file.
