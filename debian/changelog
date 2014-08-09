@@ -16,6 +16,7 @@ dangen (0.5-3) UNRELEASED; urgency=medium
     - debian/dangen.docs: remove extra license line.
     - fix-extra-license-file.patch added to remove all license files from
       EXTRA_DIST.
+  * Added Vcs-* fields.
   * New maintainer, thanks Oohara for your work!(Closes: #738876)
 
  -- Alexander Alemayhu <alexander@bitraf.no>  Mon, 04 Aug 2014 22:57:28 +0200
