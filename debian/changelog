@@ -2,6 +2,7 @@ dangen (0.5-4) UNRELEASED; urgency=medium
 
   * Move debianization information into a README.Debian.
   * Change maintainer addresse.
+  * Bumb standards version from 3.9.5 to 3.9.6.
 
  -- Alexander Alemayhu <alexander@alemayhu.com>  Sat, 11 Apr 2015 19:19:10 +0200
 
